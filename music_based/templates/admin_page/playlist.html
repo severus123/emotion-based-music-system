@@ -1,0 +1,22 @@
+{% include "admin_page/admin_header.html" %}
+    <h1>PLAYLIST ADDITION</h1>
+    <form method = "post" enctype="multipart/form-data">
+        muisc name: <input type="text" name = "mname" placeholder = "enter the name of the music file" ><br><br>
+        file : <input type = "file" name = "file" >
+        language:<select type = "text" name = "sel">
+            <option>English</option>
+            <option>Malayalam</option>
+            <option>Hindi</option>
+            <option>Spanish</option>
+            <option>Arabic</option>
+            <option>korean</option>
+            <option>french</option>
+            <option>Manderian</option>
+            <option>chinese</option>
+            <option>urudu</option>
+        </select>  <br><br>
+        artist name: <input type = "text" name = "aname" placeholder = "enter the artist name">
+        <input type = "submit"   name = "submit" value = "Register">
+        <input type = "reset" name = "reset">
+    </form>
+{% include "footer.html" %}

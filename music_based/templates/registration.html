@@ -1,0 +1,47 @@
+{% include "header.html" %}
+    <h1>   REGISTRATION PAGE </h1>
+    <form method = "post" enctype="multipart/form-data">
+        name: <input type = "text" name = "txt" placeholder = "enter your name"><br><br>
+        enter the Username :<input type = "text" name = "name" id = "txt" placeholder = "enter your username" required><br><br>
+        enter your password: <input type = "password" name = "password" placeholder = "enter your password"><br><br>
+        enter your password again: <input type = "password" name = "password1" placeholder = "enter your password again"><br><br>
+        email: <input type = "email" placeholder = "enter your email id" name = "mail1"> <br><br>
+        phone number:<input type = "number" name = "num" placeholder = "enter the phone number"><br><br>
+        DOB:<input type = "date" name = "dob" ><br><br>
+        Gender: <input type = "radio" value = "male" name = "gen">Male
+        <input type = "radio" value = "male" name = "gen">Female
+        <input type = "radio" value = "male" name = "gen">Others <br><br>
+        age:<input type = "number"  name = "age"><br><br>
+        Address:<textarea name="area" id="area" cols="30" rows="0"></textarea><br><br>
+        city <input type="text" name = "city" placeholder="enter your city"><br><br>
+        State: <input type="text" placeholder="enter your state" name = "state"><br><br>
+        pincode <input type = "number" placeholder="enter your pincode" name = "pincode"><br><br>
+        language:<select type = "text" name = "sel">
+            <option>English</option>
+            <option>Malayalam</option>
+            <option>Hindi</option>
+            <option>Spanish</option>
+            <option>Arabic</option>
+            <option>korean</option>
+            <option>french</option>
+            <option>Manderian</option>
+            <option>chinese</option>
+            <option>urudu</option>
+        </select>  <br><br>
+        Nationality: <select type = "text" name = "nat">
+            <option>INDIA</option>
+            <option>UNITED ARAB EMIRATES</option>
+            <option>UNITED STATE OF AMERICA</option>
+            <option>SPAIN</option>
+            <option>FRANCE</option>
+            <option>CHINA</option>
+            <option>LITHUANIA</option>
+            <option>BURMA</option>
+            <option>BRAZIL</option>
+            <option>SRI LANKA</option>
+        </select>  <br><br>
+        Profile picture: <input type = "file" name = "img1" ><br><br>
+        <input type = "submit" name = "submit">
+        <input type = "reset" name = "reset">
+        </form>
+{% include "footer.html" %}

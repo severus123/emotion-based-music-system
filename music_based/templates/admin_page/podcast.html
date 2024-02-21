@@ -1,0 +1,25 @@
+{% include "admin_page/admin_header.html" %}
+    <h1>this is the page to input the podcast</h1>
+    <form>
+       name: <input type="text" name = "poname" required><br><br>
+       author: <input type="text" name = "paname" required><br><br>
+       descrition: <textarea type = "text" name = "txtarea"></textarea><br><br>
+        language:<select type = "text" name = "sel">
+            <option>English</option>
+            <option>Malayalam</option>
+            <option>Hindi</option>
+            <option>Spanish</option>
+            <option>Arabic</option>
+            <option>korean</option>
+            <option>french</option>
+            <option>Manderian</option>
+            <option>chinese</option>
+            <option>urudu</option>
+        </select>  <br><br> 
+        
+        podcast file:<input type = "file" name = "bname"><br><br>
+        <input type = "submit">
+        <input type = "reset">
+        
+    </form>
+{% include "footer.html" %}

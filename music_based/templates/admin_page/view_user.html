@@ -1,0 +1,19 @@
+{% include "admin_page/admin_header.html" %}
+
+<h1>this is a user view in admin page </h1>
+
+<table border= "2" >
+    <tr>
+        <th>name</th>
+        <th>address</th></tr><tr>
+        {% for i in d['c'] %}
+        <td>{{ i['name']}}</td></tr><tr>
+        <td>{{ i['Address']}}</td>
+        
+        {% endfor %}
+    </tr>
+</table>
+
+
+
+{% include "footer.html" %}

@@ -1,0 +1,47 @@
+{% include "admin_page/admin_header.html" %}
+
+
+
+<form  method="post">
+    <table>
+        <tr>
+            <th>category name</th>
+            <td><select name="category" id="">
+            <option value="">select</option>
+            {% for i in data['cat'] %}
+            <option value="{{ i['cate_id'] }}">{{ i['cate_list'] }}</option>
+            {% endfor %}
+        </select></td>
+
+        </tr>
+        <tr><th>
+        </th>
+        <td>
+            <input type="submit" name="submit">
+        </td></tr>
+       
+    </table>
+</form>
+
+<!-- <table>
+    <tr>
+        <th>
+        category:
+    </th>
+    </tr>
+    {% for i in data['cat'] %}
+    <tr>
+        <td>{{i['cote_list']}}</td>
+    </tr>
+    {% endfor %}
+</table> -->
+
+
+
+
+
+
+
+
+
+{% include "footer.html" %}
